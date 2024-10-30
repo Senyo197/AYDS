@@ -1,0 +1,14 @@
+[30-Oct-2024 06:24:37 UTC] PHP Warning:  openssl_pkey_export(): Cannot get key from parameter 1 in C:\Users\Admi\Local Sites\ayds\app\public\wp-content\plugins\gitium\functions.php on line 358
+[30-Oct-2024 06:28:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "FS_CHMOD_FILE" in C:\Users\Admi\Local Sites\ayds\app\public\wp-admin\includes\class-wp-filesystem-direct.php:164
+Stack trace:
+#0 C:\Users\Admi\Local Sites\ayds\app\public\wp-admin\includes\class-wp-filesystem-direct.php(86): WP_Filesystem_Direct->chmod('C:\\Users\\Admi\\L...', false)
+#1 C:\Users\Admi\Local Sites\ayds\app\public\wp-content\plugins\deployer-for-git\includes\Logger.php(105): WP_Filesystem_Direct->put_contents('C:\\Users\\Admi\\L...', 'Deny from all')
+#2 C:\Users\Admi\Local Sites\ayds\app\public\wp-content\plugins\deployer-for-git\includes\Logger.php(26): DeployerForGit\Logger->create_htaccess()
+#3 C:\Users\Admi\Local Sites\ayds\app\public\wp-content\plugins\deployer-for-git\includes\Subpages\InstallPackage.php(80): DeployerForGit\Logger->__construct()
+#4 C:\Users\Admi\Local Sites\ayds\app\public\wp-content\plugins\deployer-for-git\includes\Subpages\InstallThemePage\InstallTheme.php(51): DeployerForGit\Subpages\InstallPackage->handle_package_install_form()
+#5 C:\Users\Admi\Local Sites\ayds\app\public\wp-includes\class-wp-hook.php(324): DeployerForGit\Subpages\InstallThemePage\InstallTheme->init_page('')
+#6 C:\Users\Admi\Local Sites\ayds\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\Users\Admi\Local Sites\ayds\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\Admi\Local Sites\ayds\app\public\wp-admin\admin.php(259): do_action('deployer-for-gi...')
+#9 {main}
+  thrown in C:\Users\Admi\Local Sites\ayds\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 164
